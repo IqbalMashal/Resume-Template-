@@ -1,0 +1,190 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\usepackage[margin=1.4cm]{geometry}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.15in}
+ \addtolength{\textwidth}{0.3in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{0pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}\vspace{0pt}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Large \scshape Iqbal Mashal} \\[2mm]
+    \footnotesize 
+    \raisebox{-0.1\height}{\faPhone} \ \underline{(647) 512-2106} ~
+    \raisebox{-0.1\height}{\faEnvelope} \ \underline{iqbal.mashal077@gmail.com} ~
+    \raisebox{-0.1\height}{\faLinkedin} \ \underline{\href{https://www.linkedin.com/in/iqbalmashal/}{linkedin.com/in/iqbalmashal}} ~
+    \raisebox{-0.1\height}{\faGithub} \ \underline{\href{https://github.com/IqbalMashal}{github.com/IqbalMashal}}
+    \vspace{-8pt}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+    \resumeSubheading
+        {Seneca Polytechnic}{Expected Graduation: May 2026}
+        {Software Programming \& Analysis Advanced Diploma } {Toronto, ON}
+\resumeSubHeadingListEnd
+
+\resumeItemListStart
+    \resumeItem{President’s Honour List | \textbf{GPA: 3.9/4.0}}
+    \vspace{-7pt}
+    \resumeItem{Courses: Advanced Database Management, Object-oriented programming, Applied Machine Learning, Operating Systems, Computer Architecture, Model-Based Programming, Algorithms, and Data Structures.}
+\resumeItemListEnd
+\vspace{-12pt}
+
+%-----------Experience---------------
+\section{Work Experience}
+\resumeSubHeadingListStart
+    \resumeSubheading
+        {ANSS Foundation}{Jun 2025 -- Aug 2025}
+        {Full Stack Developer Intern}{Scarborough, ON}
+        \resumeItemListStart
+            \resumeItem{Redesigned homepage with modern \textbf{Next.js} components, increasing user engagement by \textbf{40\%} and achieving \textbf{95\% positive stakeholder feedback}}
+            \resumeItem{Streamlined membership application system, reducing processing time by \textbf{50\%} and increasing successful applications by \textbf{25\%}}
+            \resumeItem{Enhanced database performance with \textbf{MongoDB schema optimization} and \textbf{JWT authentication}, achieving \textbf{60\% faster data retrieval}}
+            \resumeItem{Built a scalable community platform supporting \textbf{500+ active members}, reducing operational costs by \textbf{30\%} while tripling concurrent user capacity}
+        \resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%-----------PROJECTS-----------
+\section{Projects} 
+\vspace{-5pt}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+    {\textbf{{PDFlex}} $|$ \emph{Next.js, LangChain, Google Generative AI, Tailwind CSS, Convex, Clerk}}{}
+    \resumeItemListStart
+        \resumeItem{Integrated \textbf{Google Generative AI} and \textbf{LangChain} to extract key insights from PDFs, reducing study material search time by \textbf{65\%} and enabling smarter notetaking}
+        \resumeItem{Developed a responsive UI with \textbf{Next.js}, \textbf{React}, and \textbf{Tailwind CSS}, increasing user session duration by \textbf{40\%}}
+        \resumeItem{Implemented \textbf{Convex} for scalable data management and \textbf{Clerk} authentication, ensuring 99.9\% uptime and secure access}
+    \resumeItemListEnd
+\vspace{-20pt}
+\resumeProjectHeading
+    {\textbf{{File Keeper}} $|$ \emph{TypeScript, Next.js, Tailwind CSS, AWS S3, Firebase}}{}
+    \resumeItemListStart
+        \resumeItem{Engineered a virtual file management platform using \textbf{TypeScript}, \textbf{AWS S3}, and \textbf{Firebase}, enabling secure cloud storage with 100\% file retrieval accuracy}
+        \resumeItem{Integrated \textbf{Firebase Authentication} for secure login/signup, achieving zero reported breaches and a \textbf{30\% faster} onboarding process}
+        \resumeItem{Optimized real-time data handling with \textbf{Node.js} and \textbf{Firebase Storage}, improving file upload/download speeds by \textbf{45\%}}
+    \resumeItemListEnd
+\vspace{-15pt}
+\resumeProjectHeading
+    {\textbf{{GPT Lite}} $|$ \emph{Next.js, IndexedDB, OpenAI REST API, JavaScript}}{}
+    \resumeItemListStart
+        \resumeItem{Built an AI-powered chat application with \textbf{Next.js} and \textbf{OpenAI REST API}, reducing average user query resolution time by \textbf{50\%}}
+        \resumeItem{Implemented offline capability using \textbf{IndexedDB}, enabling 100\% functionality without internet for stored conversations}
+        \resumeItem{Enhanced responsiveness and load performance by \textbf{35\%} through optimized JavaScript workflows and efficient API request handling}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-15pt}
+  %-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{
+        \item{
+            \textbf{Languages}{: C, C++, C\#, Bash, JavaScript, TypeScript, Python, SQL, HTML5, CSS} \\[1mm]
+            \textbf{Backend}{: MongoDB, PostgreSQL, MySQL, Oracle, Firebase, Node.js, Express.js, GraphQL, Convex} \\[1mm]
+            \textbf{Frontend}{: React.js, Next.js, Gatsby, Shadcn, Tailwind CSS, Bootstrap, HTML5, CSS} \\[1mm]
+            \textbf{DevOps/Cloud}{: Git/GitHub, Docker, AWS (IAM, EC2, S3, Lambda, RDS), CI/CD, GitHub Actions} \\[1mm]
+            \textbf{AI \& Machine Learning}{: LangChain, LangGraph, OpenAI REST API} \\[1mm]
+            \textbf{Operating Systems}{: Windows Server, Linux, Ubuntu} \\[1mm]
+            \textbf{Developer Tools}{: Postman, PowerBI, Jira}
+        }
+    }
+\end{itemize}
+
+ \vspace{-16pt}
+ \vspace{3pt}
+\vspace{10pt}
+
+\vspace{-15pt}
+
+
+
+\end{document}
